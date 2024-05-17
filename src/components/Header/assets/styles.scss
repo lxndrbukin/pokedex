@@ -1,0 +1,33 @@
+.header {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+
+  .header-logo {
+    height: 60px;
+  }
+
+  .header-search {
+    display: flex;
+    justify-self: center;
+
+    input {
+      border: none;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    button {
+      background-color: transparent;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      svg {
+        font-size: 18px;
+      }
+    }
+  }
+}
